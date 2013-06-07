@@ -1,9 +1,9 @@
 Single repo Pelican based blog with GitHub Pages
 ================================================
 
-I wanted to begin using a static site generator to blog. `_Pelican` seemed
-nice. I wanted to use GitHub to `_host` the site. Most importantly I wanted a 
-single repo with distinction between the pelican config/`_reST` files and the
+I wanted to begin using a static site generator to blog. `Pelican`_ seemed
+nice. I wanted to use GitHub to `host`_ the site. Most importantly I wanted a 
+single repo with distinction between the pelican config/`reST`_ files and the
 static generated content. Here are the steps that I devised:
     * Create a new repo on GitHub with the format username.github.io
     * Install pelican (clone the themes, plugins) & grab ghp-import
