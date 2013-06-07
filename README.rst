@@ -7,7 +7,7 @@ Steps:
     * pelican-quickstart (with ~/username.github.io as the location)
     * cd ~/username.github.io
     * git init .
-    * echo '\*.pyc\noutput/\n' > .gitignore
+    * echo '\*.pyc\\noutput/\\n' > .gitignore
     * git add .gitignore
     * git commit -m 'gitignore'
     * git add (all untracked files)
