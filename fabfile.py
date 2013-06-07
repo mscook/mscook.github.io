@@ -16,7 +16,7 @@ def parse_config():
     """
     Very simple parser to get the remote repo info
     """
-    with open(os.path.join(get_fab_script_location(), "config.dat") as fin:
+    with open(os.path.join(get_fab_script_location(), "config.dat")) as fin:
         lines = fin.readlines()
     return lines[0].split('=')[-1].strip()
     
@@ -27,7 +27,7 @@ def generate():
     Execute the Pelican Makefile
     """
     loc = get_fab_script_location()
-    with (os.chdir(loc):
+    with (os.chdir(loc)):
         os.system("make html")
     return loc
 
@@ -38,7 +38,7 @@ def publish():
     """
     loc = generate()
     un  = loc.split('.')[0]
-    with (os.chdir(loc):
+    with (os.chdir(loc)):
         os.system("ghp-import output")
         os.system("git push git@github.com:username/username.github.io.git "
                     +"gh-pages:master".replace("username", un))
