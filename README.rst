@@ -54,9 +54,21 @@ content.
 Streamlining publication with Fabric
 ------------------------------------
 
-`Fabric`_ is a tool is use daily. I built a fabfile with two tasks:
-    * generate  Execute the Pelican Makefile
-    * publish   Publish the site/blog to GitHub 
+`Fabric`_ is a tool is use daily. I built a fabfile.py with two tasks::
+
+    user@host:~/> cd ~/username.github.io
+    user@host:~/username.github.io> fab -c fabfile.py -l
+
+    Available commands:
+
+    generate  Execute the Pelican Makefile
+    publish   Publish the site/blog to GitHub
+
+
+Now to publish my site (includes a call to generate)::
+
+    user@host:~/username.github.io> fab -c fabfile.py publish
+
 
 
 .. _Pelican: http://blog.getpelican.com/ 
