@@ -27,8 +27,8 @@ def generate():
     Execute the Pelican Makefile
     """
     loc = get_fab_script_location()
-    with (os.chdir(loc)):
-        os.system("make html")
+    os.chdir(loc)
+    os.system("make html")
     return loc
 
 @task
@@ -37,10 +37,9 @@ def publish():
     Publish the site/blog to GitHub
     """
     loc = generate()
-    un  = loc.split('.')[0]
-    with (os.chdir(loc)):
-        os.system("ghp-import output")
-        os.system("git push git@github.com:username/username.github.io.git "
-                    +"gh-pages:master".replace("username", un))
+    uname = parse_config()
+    os.chdir(loc)
+    os.system("ghp-import output")
+    os.system("git push git@github.com:username/username.github.io.git gh-pages:master".replace("username", uname))
     return loc
 
