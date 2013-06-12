@@ -50,6 +50,15 @@ Now if you look at your GitHub repo, you have a:
 Pretty nifty. Complete separation of config/raw files and the generated
 content.
 
+Cloning onto a different box
+----------------------------
+
+As our gh-pages is published to GitHub as a master, we'll need something like this::
+
+    git clone git://github.com/username/username.github.io.git
+    git checkout master
+    git branch -m master gh-pages
+
 
 Streamlining publication with Fabric
 ------------------------------------
