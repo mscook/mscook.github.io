@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Mitchell Stanton-Cook'
-SITENAME = u'BioDevOp'
+SITENAME = u'Bio.Dev.Op'
 SITEURL = ''
 
 TIMEZONE = 'Australia/Brisbane'
@@ -16,10 +17,9 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
+LINKS =  (('GitHub', 'https://github.com/mscook/'),
           ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+          ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -27,5 +27,9 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+THEME = os.path.expanduser("~/3rd-repos/pelican-themes/chunk")
+SITESUBTITLE = 'Bioinformatics, Software Developemnt & System Administration'
+FOOTER_TEXT = '(c) 2013 Mitchell Stanton-Cook'
+SINGLE_AUTHOR = True
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
