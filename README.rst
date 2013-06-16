@@ -78,6 +78,10 @@ Now to publish my site (includes a call to generate)::
 
     user@host:~/username.github.io> fab -c fabfile.py publish
 
+Custom domain
+-------------
+
+Still working on it...
 
 
 .. _Pelican: http://blog.getpelican.com/ 
