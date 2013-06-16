@@ -42,15 +42,27 @@
 						<div class="post type-post status-publish format-standard hentry category-general" id="post">
 	<div class="entry-meta">
 		<div class="date"><a href="/bad-with-big-data.html">Sun 16 June 2013</a></div>
-							<div class="comments"><a href="/bad-with-big-data.html#disqus_thread" title="Comment on My super title">comments</a></div>
+							<div class="comments"><a href="/bad-with-big-data.html#disqus_thread" title="Comment on What not to do in Python when working with Big Data">comments</a></div>
 							<span class="cat-links"><a href="/category/programming.html" title="View all posts in programming" rel="category tag">programming</a></span>
 			</div> <!-- /#entry-meta -->
 	<div class="main">
 		<h2 class="entry-title">
-			<a href="/bad-with-big-data.html" title="Permalink to My super title" rel="bookmark">My super title</a>
+			<a href="/bad-with-big-data.html" title="Permalink to What not to do in Python when working with Big Data" rel="bookmark">What not to do in Python when working with Big Data</a>
 		</h2>
 		<div class="entry-content">
-			<p>Test me...</p>
+			<p>Please do not do this If you're developing software that is working with big
+data files:</p>
+<div class="highlight"><pre>f = open(&quot;really_big_fucking_file.dat&quot;)
+lines = f.readlines()
+for line in lines:
+    do_something(line)
+f.close()
+</pre></div>
+<p>Please do this:</p>
+<div class="highlight"><pre>with open(&quot;really_big_fucking_file.dat&quot;) as f:
+    for line in f:
+        do_something(line)
+</pre></div>
 
 		</div> <!--/#entry-content-->
 			</div> <!--/#main-->
