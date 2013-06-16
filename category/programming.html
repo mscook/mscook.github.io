@@ -54,17 +54,19 @@
 		<div class="entry-content">
 			<p>Please do not do this If you're developing software that is working with big
 data files:</p>
-<div class="highlight"><pre>f = open(&quot;really_big_fucking_file.dat&quot;)
-lines = f.readlines()
-for line in lines:
-    do_something(line)
-f.close()
-</pre></div>
+<pre class="code python literal-block">
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;really_big_fucking_file.dat&quot;</span><span class="p">)</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+    <span class="n">do_something</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre>
 <p>Please do this:</p>
-<div class="highlight"><pre>with open(&quot;really_big_fucking_file.dat&quot;) as f:
-    for line in f:
-        do_something(line)
-</pre></div>
+<pre class="code python literal-block">
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;really_big_fucking_file.dat&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">do_something</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre>
 
 		</div> <!--/#entry-content-->
 			</div> <!--/#main-->
