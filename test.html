@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-				<title>Bio.Dev.Op &mdash; Articles by Mitchell Stanton-Cook</title>
+				<title>Bio.Dev.Op &mdash; Blah</title>
 		<meta charset="utf-8" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" type="text/css" href="/theme/css/style.css" />
@@ -25,7 +25,7 @@
 			<div class="menu-navigation-container">
 				<ul id="menu-navigation" class="menu">
 										  						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/pages/about.html">About</a></li>
-					  										  						<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/category/programming.html">programming</a></li>
+					  										  						<li class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/category/programming.html">programming</a></li>
 					  															  						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://au.linkedin.com/in/mjstantoncook">LinkedIn</a></li>
 					  						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://scholar.google.com/citations?user=MGafrX4AAAAJ&hl=en">Scholar</a></li>
 					  						<li  class="active" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://github.com/mscook/">GitHub</a></li>
@@ -35,40 +35,11 @@
 		</div><!-- /#menu -->
 		
 		<div class="page-title">
-				<h2>Posted by <span>Mitchell Stanton-Cook</span> &hellip;</h2>
-		</div>
+					</div>
 	
 		<div id="contents">
-						<div class="post type-post status-publish format-standard hentry category-general" id="post">
-	<div class="entry-meta">
-		<div class="date"><a href="/bad-with-big-data.html">Sun 16 June 2013</a></div>
-							<div class="comments"><a href="/bad-with-big-data.html#disqus_thread" title="Comment on What not to do in Python when working with Big Data">comments</a></div>
-							<span class="cat-links"><a href="/category/programming.html" title="View all posts in programming" rel="category tag">programming</a></span>
-			</div> <!-- /#entry-meta -->
-	<div class="main">
-		<h2 class="entry-title">
-			<a href="/bad-with-big-data.html" title="Permalink to What not to do in Python when working with Big Data" rel="bookmark">What not to do in Python when working with Big Data</a>
-		</h2>
-		<div class="entry-content">
-			<p>Please do not do this If you're developing software that is working with big
-data files:</p>
-<pre class="code python literal-block">
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;really_big_fucking_file.dat&quot;</span><span class="p">)</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
-    <span class="n">do_something</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre>
-<p>Please do this:</p>
-<pre class="code python literal-block">
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&quot;really_big_fucking_file.dat&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">do_something</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-</pre>
-
-		</div> <!--/#entry-content-->
-			</div> <!--/#main-->
-</div>  <!--/#post-->			<div class="post type-post status-publish format-standard hentry category-general" id="post">
+			
+<div class="post type-post status-publish format-standard hentry category-general" id="post">
 	<div class="entry-meta">
 		<div class="date"><a href="/test.html">Thu 20 June 2013</a></div>
 							<div class="comments"><a href="/test.html#disqus_thread" title="Comment on Blah">comments</a></div>
@@ -83,8 +54,25 @@ data files:</p>
 
 		</div> <!--/#entry-content-->
 			</div> <!--/#main-->
-</div>  <!--/#post-->		<div class="navigation">
-		</div>
+</div>  <!--/#post-->
+	<div id="comments">
+		<div id="respond">
+			<div id="disqus_thread"></div>
+	        <script type="text/javascript">
+	            var disqus_shortname = 'biodevop';
+	
+	            /* * * DON'T EDIT BELOW THIS LINE * * */
+	            (function() {
+	                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	            })();
+	        </script>
+	        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		</div><!-- #respond -->					
+</div><!-- #comments -->
+
 		</div>
 		
 		<div id="footer">
