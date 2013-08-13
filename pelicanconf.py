@@ -25,9 +25,9 @@ LINKS =  (('LinkedIn', 'http://au.linkedin.com/in/mjstantoncook'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 3
 
-THEME = os.path.expanduser("~/3rd-repos/pelican-themes/chunk")
+THEME = os.path.expanduser("~/3rd-repos/spoonbill")
 SITESUBTITLE = 'Biology, Code & Computers'
 FOOTER_TEXT = '(c) 2013 Mitchell Stanton-Cook'
 SINGLE_AUTHOR = True
@@ -36,10 +36,16 @@ SINGLE_AUTHOR = True
 
 DISPLAY_PAGES_ON_MENU = True
 
-GITHUB_URL = 'http://github.com/mscook'
+GITHUB_URL = 'https://github.com/mscook'
+TWITTER_USERNAME = 'mscook'
 #Note - real is Bio.Dev.Op but giving this seems to override shortname...
 DISQUS_SITENAME = 'biodevop'
 DISQUS_SHORTNAME = 'biodevop'
+
+#Spoonbill specific
+SITEDESCRIPTION = "Bio.Dev.Op - Biology, Code & Computers"
+GOOGLE_WEBMASTER = "tYDBAsj8peJGDx84OVpLivF0Q8n0Q94PaL38KKLPLdg"
+TWITTER_URL = "https://twitter.com/mscook"
 
 #FILES_TO_COPY = (
 #    ('CNAME/CNAME', 'CNAME'),)
